@@ -1,0 +1,14 @@
+author = "SeveN";
+onLoadName = "D Day";
+onLoadMission = "D Day";
+
+#include "SeveN\Master.hpp"
+
+class CfgFunctions {
+	#include "SeveN\Functions.hpp"
+};
+
+class CfgSounds 
+{
+	
+};
