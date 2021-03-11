@@ -1,6 +1,4 @@
-author = "SeveN";
-onLoadName = "D Day";
-onLoadMission = "D Day";
+author = "'Nome do editor' & SeveN"; // Créditos dos scripts
 
 #include "SeveN\Master.hpp"
 

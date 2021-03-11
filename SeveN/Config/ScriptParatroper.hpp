@@ -5,6 +5,8 @@
 */
 
 
+// Init objeto: this addAction["Entrar no avião",{[] spawn SeveN_fnc_MenuJump;},"", 15, false, false, '',''];
+
 class Paratroper {
 
 	AtivarFakeAviao = "true";

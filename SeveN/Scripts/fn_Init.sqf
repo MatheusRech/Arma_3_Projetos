@@ -10,6 +10,8 @@
 
 SeveN_FakeAviao = Call Compile (getText(MissionConfigFile >> "Paratroper" >> "AtivarFakeAviao"));
 SeveN_ControleZeusFakeAviao = false;
+SeveN_JogadoresAviao = []; 
+SeveN_SeveN_ChamadaAviao = false;
 
 //Functions
 
