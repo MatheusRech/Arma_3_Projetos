@@ -31,7 +31,7 @@ if!(chamadaAviao) then {
 		_cont = _cont - 1;
 	};
 		
-	_veh = createVehicle ["LIB_C47_Skytrain", [3751.875,9563.077,1000], [], 0, "FLY"];
+	_veh = createVehicle [getText (MissionConfigFile >> "Paratroper" >> "ClasseAviao"), getArray (MissionConfigFile >> "Paratroper" >> "PosicaoIncialAviao"), [], 0, "FLY"];
 
 	_grupoBot = createVehicleCrew _veh;
 

@@ -6,9 +6,13 @@ class SeveN_Scripts {
 		
 		class AtualizaMapa {};
 		class EntrarNoAviao {};
+		class Init {};
 		class LuzVerde {};
 		class MenuJump {};
 		class MoveAviao {};
 		class ServerDDay {};
+		class SpawnAvioesFake {};
+		class TocarMusica {};
+		class TocarMusicaLoop {};
 	};
 };

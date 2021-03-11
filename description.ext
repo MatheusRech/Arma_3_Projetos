@@ -10,5 +10,5 @@ class CfgFunctions {
 
 class CfgSounds 
 {
-	
+	#include "SeveN\Musicas.hpp"
 };
