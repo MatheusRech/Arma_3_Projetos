@@ -4,6 +4,8 @@ Ola eu meu nick é SeveN e programo scripts para o jogo arma 3. Este trabalho te
 
 Meu discord: **SeveN#0090**
 
+**Caso deseje utilizar o meu pacote é ncessario menssurar meu nick nos autores da missão!!**
+
 # Configuração
 Para adicionar o pacote de scripts em sua missão é necessário copiar o arquivo init.sqf para a pasta da sua missão, caso ja tenha um arquivo init em sua missão basta copiar e colocar a linha de código abaixo em qualquer lugar do arquivo:
 
