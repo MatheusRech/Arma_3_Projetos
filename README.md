@@ -79,4 +79,26 @@ Em loop:
     ["nova_musica", caixaDeSon, 15, 105] spawn SeveN_fnc_TocarMusicaLoop;
     
 O ultimo parametro é o tempo da musica em segundos.
+
+## Play Video:
+
+Este script foi criado para implementar uma necessidade de reproduzir um video na tela do jogador.
+
+Reproduzir Video:
+
+    ["nomeDoVideo"] spawn SeveN_fnc_PlayVideo;
+    
+O video deve ser configurado no arquivo **ScriptVideo.hpp** no diretório **/SeveN/Config/** seguindo o padrão que ja esta implementado no arquivo:
+
+    class Exemplo {
+		nome = "Meu video"; // Nome do video
+		path = "\SeveN\Video\meuvideo.ogv"; // Local do arquivo a partir da pasta da missão
+    }
+    
+Nome é utilizado para apresentar na tela do zeus, caso a configuração **Ativado** for definida para **"true"**, no menu do ace do ZeuS é habilitado a opção **Play Video** que automaticamente obtem os videos da configuração para que seja reproduzido para todos os jogados.
+
+Para pular o video use a função:
+
+    [] spawn SeveN_fnc_SkipVideo;
+    
 	
