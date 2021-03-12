@@ -49,17 +49,17 @@ Reproduzir Son:
 O son deve ser configurado no arquivo **description.ext** na classe **CfgSongs** ou pode ser adicionado no arquivo **Muiscas.hpp** no diretório **/SeveN/Musicas.hpp** seguindo o padrão que ja esta implementado no arquivo:
 
     class sirene {
-	name = "sirene"; 
-	sound[] = {"\SeveN\Musicas\sirene.ogg", 30, 1.0};
-	titles[] = {};
+		name = "sirene"; 
+		sound[] = {"\SeveN\Musicas\sirene.ogg", 30, 1.0};
+		titles[] = {};
     };
     
 O nome da class será o nome da musica, name é somente um nome para o arma 3 utilizar, sound é aonde o diretório do son, o volume da música eo pitch(consultar wiki do arma 3) e titles são as legendas do son(Consultar a wiki do arma 3 para legendas).
 
     class nova_musica {
-	name = "Alahomora"; 
-	sound[] = {"\SeveN\Musicas\yesbaby.ogg", 30, 1.0};
-	titles[] = {};
+		name = "Alahomora"; 
+		sound[] = {"\SeveN\Musicas\yesbaby.ogg", 30, 1.0};
+		titles[] = {};
     };
     
 A chamada da função fica assim:
