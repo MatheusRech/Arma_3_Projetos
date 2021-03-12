@@ -14,3 +14,4 @@
 //Config
 
 #include "Config\ScriptParatroper.hpp"
+#include "Config\ScriptVideo.hpp"

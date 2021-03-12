@@ -10,7 +10,9 @@ class SeveN_Scripts {
 		class LuzVerde {};
 		class MenuJump {};
 		class MoveAviao {};
+		class PlayVideo {};
 		class ServerDDay {};
+		class SkipVideo {};
 		class SpawnAvioesFake {};
 		class TocarMusica {};
 		class TocarMusicaLoop {};
