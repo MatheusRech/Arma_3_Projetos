@@ -51,7 +51,7 @@ SeveN_SeveN_ChamadaAviao = false;
 			private _actions = [];
 
 			{
-				_action = [getText(_X >> "nome"), getText(_X >> "nome"), "", {[_this select 2] spawn SeveN_fnc_PlayVideo;}, {true}, {}, getText(_X >> "path")] call ace_interact_menu_fnc_createAction;
+				_action = [getText(_X >> "nome"), getText(_X >> "nome"), "", {[_this select 2] remoteExec ["SeveN_fnc_PlayVideo", 0];}, {true}, {}, getText(_X >> "path")] call ace_interact_menu_fnc_createAction;
 				_actions pushBack [_action, [], _target];
 				
 			} forEach _videos;
