@@ -17,7 +17,7 @@ Todos os scripts não precisam ser alterados, somente os arquivos de configuraç
 Nenhum arquivo pode ser renomeado. 
 
 É necessário que a missão possua o mod do ACE para que alguns scripts funcionem.
-## Script de paraquedismo:
+## Paraquedismo:
 
 Este script foi criado para implementar uma necessidade de um bot que pilote um avião para os jogadores saltarem em campos especificados.
 
@@ -37,3 +37,38 @@ Local do arquivo: **SeveN/Config/ScriptParatroper.hpp**
 O script é inserido no init de qualquer objeto qualquer do editor(bot, carro, placa, casa, etc):
 
     this addAction["Entrar no avião",{[] spawn SeveN_fnc_MenuJump;},"", 15, false, false, '',''];
+    
+## Play Music:
+
+Este script foi criado para implementar uma necessidade de objetos tocarem musica ou sons. Pode ser em loop ou somente uma vez
+
+Reproduzir Son:
+
+    ["nome da musica", objetoQueReproduzSon, maxDistance] spawn SeveN_fnc_TocarMusica;
+    
+O son deve ser configurado no arquivo **description.ext** na classe **CfgSongs** ou pode ser adicionado no arquivo **Muiscas.hpp** no diretório **/SeveN/Musicas.hpp** seguindo o padrão que ja esta implementado no arquivo:
+
+    class sirene {
+	name = "sirene"; 
+	sound[] = {"\SeveN\Musicas\sirene.ogg", 30, 1.0};
+	titles[] = {};
+    };
+    
+O nome da class será o nome da musica, name é somente um nome para o arma 3 utilizar, sound é aonde o diretório do son, o volume da música eo pitch(consultar wiki do arma 3) e titles são as legendas do son(Consultar a wiki do arma 3 para legendas).
+
+    class nova_musica {
+	name = "Alahomora"; 
+	sound[] = {"\SeveN\Musicas\yesbaby.ogg", 30, 1.0};
+	titles[] = {};
+    };
+    
+A chamada da função fica assim:
+    
+    ["nova_musica", caixaDeSon, 15] spawn SeveN_fnc_TocarMusica;
+    
+Em loop:
+
+    ["nova_musica", caixaDeSon, 15, 105] spawn SeveN_fnc_TocarMusicaLoop;
+    
+O ultimo parametro é o tempo da musica em segundos.
+	
