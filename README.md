@@ -12,6 +12,14 @@ Para adicionar o pacote de scripts em sua missão é necessário copiar o arquiv
     [] spawn  SeveN_fnc_Init;
 Este script carrega todas as funções e variáveis do sistema. Também é necessário que a pasta SeveN esteja na pasta da missão.
 
+Também é ncessario copiar o arquivo **description.ext** para a pasta da missão, caso já tenha um arquivo somente adicione os includes necessários no arquivo:
+
+    #include "SeveN\Master.hpp" // no inicio das classes
+    
+    #include "SeveN\Functions.hpp" // dentro da classe CfgFunctions
+    
+    #include "SeveN\Musicas.hpp" // dentro da classe CfgSounds
+    
 Todos os scripts não precisam ser alterados, somente os arquivos de configuração localizados na pasta: **SeveN/Config/**
 
 Nenhum arquivo pode ser renomeado. 
