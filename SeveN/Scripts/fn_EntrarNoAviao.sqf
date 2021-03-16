@@ -6,13 +6,13 @@
 
 params ["_jogador", "_pos", "_index"];
 
-if(_jogador in JogadoresAviao) ExitWith {};
+if(_jogador in SeveN_JogadoresAviao) ExitWith {};
 
-if(count JogadoresAviao > 8) ExitWith {["O aviao está cheio!"] remoteExec ["sideChat", _jogador];};
+if(count SeveN_JogadoresAviao > 8) ExitWith {["O aviao está cheio!"] remoteExec ["sideChat", _jogador];};
 
-JogadoresAviao pushBackUnique _jogador;
+SeveN_JogadoresAviao pushBackUnique _jogador;
 
-[_jogador, format["Número %1 pronto!", (count JogadoresAviao)]] remoteExec ["sideChat", 0];
+[_jogador, format["Número %1 pronto!", (count SeveN_JogadoresAviao)]] remoteExec ["sideChat", 0];
 
 if!(SeveN_ChamadaAviao) then {
 	SeveN_ChamadaAviao = true;
@@ -50,9 +50,9 @@ if!(SeveN_ChamadaAviao) then {
 	sleep 0.5;
 	[""] remoteExec ["hint", -2];
 	
-	{[_veh] remoteExec ["SeveN_fnc_MoveAviao", _X]; sleep 0.5;} forEach JogadoresAviao;
+	{[_veh] remoteExec ["SeveN_fnc_MoveAviao", _X]; sleep 0.5;} forEach SeveN_JogadoresAviao;
 		
-	JogadoresAviao = [];
+	SeveN_JogadoresAviao = [];
 };
 
 	

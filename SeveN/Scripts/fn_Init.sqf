@@ -13,7 +13,7 @@ SeveN_Video = Call Compile (getText(MissionConfigFile >> "Video" >> "Ativado"));
 
 SeveN_ControleZeusFakeAviao = false;
 SeveN_JogadoresAviao = []; 
-SeveN_SeveN_ChamadaAviao = false;
+SeveN_ChamadaAviao = false;
 
 //Functions
 
