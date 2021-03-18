@@ -4,7 +4,7 @@
 
 */
 
-if(SeveN_SeveN_ChamadaAviao) ExitWith {
+if(SeveN_ChamadaAviao) ExitWith {
 	[player, [], 0] RemoteExec ["SeveN_fnc_EntrarNoAviao",2];
 };
 

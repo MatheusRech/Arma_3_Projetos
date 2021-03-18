@@ -19,7 +19,7 @@ if!(SeveN_ChamadaAviao) then {
 		
 	publicVariable "SeveN_ChamadaAviao";
 		
-	_cont = 5;
+	_cont = 60;
 		
 	while {SeveN_ChamadaAviao} do {
 		[format["Avião vai sair em %1 segundos", _cont]] remoteExec ["hint", 0];
